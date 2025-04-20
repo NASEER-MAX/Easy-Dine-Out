@@ -25,7 +25,6 @@ public class NotificationServiceImpl implements NotificationService {
 		notification.setCustomer(booking.getCustomer());
 		notification.setStartDateTime(booking.getStartDateTime());
 		notification.setEndDateTime(booking.getEndDateTime());
-
 		notificationRepository.save(notification);
 	}
 

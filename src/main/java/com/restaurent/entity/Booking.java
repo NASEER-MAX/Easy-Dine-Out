@@ -2,8 +2,8 @@ package com.restaurent.entity;
 
 import java.util.Date;
 
-//import com.mizbah.service.BookingEntityListener;
 
+import com.restaurent.service.BookingEntityListener;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EntityListeners;
@@ -27,7 +27,7 @@ import lombok.NoArgsConstructor;
 @Data
 @Table(name = "bookings")
 @Entity
-//@EntityListeners(BookingEntityListener.class)
+@EntityListeners(BookingEntityListener.class)
 public class Booking {
 
 	@Id
